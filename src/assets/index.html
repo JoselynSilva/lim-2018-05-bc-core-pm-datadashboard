@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <title>DATADASHBORAD</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <nav class="navbar">
         <span class="open-slide">
@@ -61,44 +59,6 @@
                 <img id="promoImg" src="img/promo.png">
             </article>
         </main>
-        <main id="main-students" style="display: none;">
-            <h2>Estudiantes</h2>
-            <article>
-                <label>Buscar: </label>
-                <input type="search" id="filter" placeholder="Search for something..">
-
-                <label>Ordenar por</label>
-                <select name="orderBy" id="order-by">
-                    <option value="">---</option>
-                    <option value="name">Nombre</option>
-                    <option value="totalComp">Completitud General</option>
-                    <option value="exc">Ejercicios</option>
-                    <option value="reads">Lecturas</option>
-                    <option value="quiz">Quizzes</option>
-                </select>
-
-                <label> Ordenar en dirección </label>
-                <select name="orderDir" id="order-dir">
-                    <option value="">---</option>
-                    <option value="asc">Ascendente</option>
-                    <option value="des">Descendente</option>
-                </select>
-            </article>
-            <table id="tableStudent">
-                <thead>
-                    <tr>
-                        <th>Nombres</th>
-                        <th>Completitud General</th>
-                        <th>Lecturas</th>
-                        <th>Ejercicios</th>
-                        <th>Quiz</th>
-                    </tr>
-                </thead>
-                <tbody id="listTable">
-                </tbody>
-            </table>
-        </main>
-
         <main id="main-progress" style="display: none;">
             <h2>Progreso</h2>
             <article class="art-student">
@@ -153,5 +113,4 @@
     <script src="js/main2.js"></script>
     <!-- <script src="js/main.js"></script> -->
 </body>
-
 </html>

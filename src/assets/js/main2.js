@@ -28,9 +28,6 @@ const menuSquads = document.getElementById('btnShowSquads');
 
 const selectCampus = document.getElementById('selectCampus');
 const selectCohorts = document.getElementById('selectCohorts');
-const selectOrderBy = document.getElementById('order-by');
-const selectDirection = document.getElementById('order-dir');
-
 const totalUser = document.getElementById('totalUser');
 const totalCourse = document.getElementById('totalCourse');
 
@@ -98,10 +95,6 @@ searchUser.addEventListener('keyup', () => {
     let usersWithStats = processCohortData(options);
     showData(usersWithStats);
 });
-
-
-
-
 
 const showData = (array) => {
     let template = '';
@@ -182,9 +175,6 @@ const showCampus = (str, arr) => {
     })
 
 }
-
-
-
 
 getData('', 'https://api.laboratoria.la/campuses/', showCampus);
 
