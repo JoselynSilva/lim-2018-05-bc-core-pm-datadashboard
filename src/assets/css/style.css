@@ -8,26 +8,31 @@ body{
     margin: 0;
     padding: 0;
 }
-.navbar{ /*BARRA*/
+
+.navbar{
   background-color: #ffffff;
   overflow:hidden;
   width: 100%;
   height:65px;
 }
+
 .navbar a{
   float:left;
   display:block;
   padding:16px;
 }
+
 .navbar a:hover{
   background-color:#ddd;
 }
+
 #logo-lab {
   width: 300px;
   height: 45px;
   display: block;
   margin: 10px auto;
 }
+
 .side-nav {
   height:100%;
   width:0;
@@ -40,6 +45,7 @@ body{
   transition:0.3s;
   z-index: 1;
 }
+
 .side-nav .btn-close{
   width: auto;
   height: auto;
@@ -51,6 +57,7 @@ body{
   text-decoration: none;
   border-radius: 60px;
 }
+
 .side-nav a {
   width: 250px;
   text-decoration:none;
@@ -60,14 +67,17 @@ body{
   transition:0.3s;
   padding-left: 50px;
 }
+
 .side-nav a:hover{
   color:rgb(255, 255, 255);
   background: #FF009E;
 }
+
 .icon-menu {
   vertical-align: middle;
   padding-right: 15px;
 }
+
 #user-photo {
   height: 100px;
   width: auto;
@@ -75,12 +85,14 @@ body{
   display: block;
   margin-left: 75px;
  }
+
 .side-nav h3,
 p {
   text-align: center;
   margin: 0px;
   padding: 3px;
 }
+
 #main {
   transition:margin-left 0.3s;
   padding: 5px;
@@ -90,14 +102,16 @@ p {
 
 h2 {
   text-align: left;
-  margin: 10px 20px;
-  font-size: 30px;
+  margin: 10px 15px;
+  padding: 0px;
+  font-size: 28px;
   
 }
 
 h2 span {
   color: #FF009E;
 }
+
 .art-progress {
   background-color:#FFE521;
   width: 55%;
@@ -106,18 +120,13 @@ h2 span {
   margin: 0px auto;
   padding: 15px;
 }
+
 .detail-one,
 .detail-two {
   display: flex;
   justify-content: space-evenly;
   margin: 0px auto;
   padding: 10px;
-}
-
-#promoImg {
-  padding-top: 50px;
-  vertical-align: middle;
-  width: 100%;
 }
 
 .detail-user,
@@ -128,21 +137,31 @@ h2 span {
   height: 80px;
 }
 
+#content-chart {
+  display: block;
+  width: 620px;
+  height: auto;
+  margin: auto;
+  padding: 0;
+}
+
+#graphic-chart {
+  margin: 20px auto;
+  padding: 0px;
+}
+
 h4, h6 {
   text-align: center;
   margin: 0px;
   padding: 5px;
 }
+
 h4 {
   font-size: 30px;
-  margin: 0;
 }
 
 p, h6{
-  
   font-size: 15px;
-  margin: 0;
-}
 }
 
 h3,
@@ -162,19 +181,15 @@ p {
 
 .art-student {
   background-color:#FFE521;
-  width: 30%;
-  height: 90px;
+  width: 35%;
+  height: 75px;
   border-radius: 5px;
   margin: 0px auto;
-  padding: 10px;
-  justify-content: space-evenly;
-  padding: 20px;
-  
-
+  padding: 8px;
 }
 
 .table-container {
-  margin: 20px;
+  margin: 10px;
   font-size: 12px;
 }
 
@@ -186,9 +201,8 @@ table {
 
 .table-th {
   background-color:#FFE521;
-  padding: 20px 15px;
+  padding: 15px;
   text-align: left;
-  /* font-weight: 500; */
   color: black;
   text-transform: uppercase;
  }
@@ -202,25 +216,26 @@ table {
 td {
   background-color: white;
   margin: auto;
-  padding: 15px;
+  padding: 10px;
   vertical-align:middle;
   font-size: 12px;
   color: black;
 }
 
 .student-container {
-  background-color: rgb(212, 214, 214);
-  width: 98%;
+  margin: auto;
+  padding: 5px;
 }
 
 article {
   background-color: white;
-  width: 20%;
-  height: 150px;
+  /* width: 20%; */
+  height: 100px;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
-  font-size: 18px;
+  font-size: 15px;
+  text-align: center;
 }
 
 video {
@@ -255,7 +270,6 @@ video {
     height: 200px;
   }
 
-
   .detail-one {
     display: inline;
     text-align: left;
@@ -286,9 +300,22 @@ video {
     height: 80px;
   }
 
-  #promoImg {
+  /* #promoImg {
     display: none;
+  } */
+
+  #content-chart {
+    width: 350px;
+    margin: 0;
+    padding: 0;
   }
+
+ #graphic-chart {
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: 50px auto;
+ }
 
   .art-student {
     width: 70%;
@@ -300,8 +327,14 @@ video {
   }
 
   .table-container {
-    margin: 20px;
-    font-size: 9px;
+  margin: 15px;
+  font-size: 9px;
+  }
+
+  td {
+    font-size: 8px;
+    margin: auto;
+    padding: 5px;
   }
 
 }

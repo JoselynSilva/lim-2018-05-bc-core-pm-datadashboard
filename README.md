@@ -1,5 +1,7 @@
 # Data Dashboard
 
+Mira el proyecto AQUÍ >>>>> https://elment9.github.io/lim-2018-05-bc-core-pm-datadashboard/src/assets/
+
 ## 1. Cliente
 Laboratoria Lima
 
@@ -52,6 +54,9 @@ LMS (Learning Management System) de Laboratoria.
 * Eliminar select sede y generación, ya que resulta redundante. Colocar solo sede.
 * Desarrollar opción para usar distintos tipos de gráficos y otra forma de seleccionar squad. 
 
+### ARQUETIPO DE USUARIO (Persona UX)
+![artboard 1 3x-100](https://user-images.githubusercontent.com/34355830/42785908-ba3a696a-8919-11e8-95a8-c67f26b8ca27.jpg)
+
 
 ### 4.2. Contenido necesario
 
@@ -69,8 +74,8 @@ Posee siguientes criterios de filtrado:
   * Lima 2018 pre core
   * CDMX 2018 pre core
   * GDL 2018 pre core
-  * Sao Paulo pre core
-  * SDC pre core 
+  * SPL pre core
+  * SCL pre core 
 
 #### a.2. Turno
   * Mañana
@@ -161,6 +166,9 @@ Para entender a plenitud el proyecto(funciones y procesos) se graficó el flujo 
 
 ![mendoza y silva _ flujo funciones](https://user-images.githubusercontent.com/39272944/41561243-f9b8a17c-730e-11e8-81cb-75d921d16891.jpg)
 
+## 6. Proyecto Final
+
+![Proceso](![Alt Text](https://media.giphy.com/media/xiqhozf3nkYikCZIv2/giphy.gif)
 
 
 

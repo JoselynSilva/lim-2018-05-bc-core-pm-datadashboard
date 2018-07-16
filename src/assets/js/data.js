@@ -39,7 +39,6 @@ window.computeUsersStats = (users, progress, courses) => {
                 scoreSum = 0;
 
             courses.forEach(course => {
-                // const progressCourse = progressUser.hasOwnProperty(course);
                 if (progressUser.hasOwnProperty(course)) {
                     percentTotal += progressUser[course].percent / (courses.length);
                     const unitsCourse = Object.values(progressUser[course].units);
@@ -111,7 +110,7 @@ window.computeUsersStats = (users, progress, courses) => {
     return users;
 };
 
-//   //Creando la funcion sortUsers
+//Creando la funcion sortUsers
 window.sortUsers = (users, orderBy, orderDirection) => {
     let studentsSort = users;
 
@@ -179,7 +178,7 @@ window.sortUsers = (users, orderBy, orderDirection) => {
     return studentsSort;
 };
 
-//   //Creando la funcion filterUsers
+//Creando la funcion filterUsers
 window.filterUsers = (users, search) => {
     let filterUser = users.filter(user => {
         return user.name.toUpperCase().indexOf(search.toUpperCase()) !== -1;
@@ -187,7 +186,7 @@ window.filterUsers = (users, search) => {
     return filterUser;
 };
 
-//   //Creando la funcion processCohortData
+//Creando la funcion processCohortData
 window.processCohortData = (options) => {
     const courses = Object.keys(options.cohort.coursesIndex);
     let students = computeUsersStats(options.cohortData.users, options.cohortData.progress, courses);

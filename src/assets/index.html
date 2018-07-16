@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DATADASHBORAD</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <span class="open-slide">
@@ -36,18 +37,22 @@
     </nav>
     <section id="container-principal">
         <main id="main-welcome">
-            <h2>Bienvenida <span>Alejandra</span></h2>
+            <h2>Bienvenida
+                <span>Alejandra</span>
+            </h2>
             <video src="img/Mapa_con_Logo.mp4" autoplay loop muted poster="img/poster.jpeg"></video>
         </main>
         <main id="main-campus" style="display: none;">
             <h2>General</h2>
             <article class="art-progress">
                 <div class="detail-one">
-                    <label>Campus</label> <br>
+                    <label>Campus</label>
+                    <br>
                     <select id="selectCampus">
                         <option value="sede">Selecciona la sede</option>
                     </select>
-                    <label>Cohort</label> <br>
+                    <label>Cohort</label>
+                    <br>
                     <select id="selectCohorts" class="select-cohorts">
                         <option>Selecciona la promocion</option>
                     </select>
@@ -56,16 +61,20 @@
                     <div id="totalUser" class="detail-user"></div>
                     <div id="totalCourse" class="detail-course"></div>
                 </div>
-                <img id="promoImg" src="img/promo.png">
+                <!-- <img id="promoImg" src="img/promo.png"> -->
+                <div id="content-chart">
+                    <canvas id="graphic-chart"></canvas>    
+                </div>
             </article>
         </main>
         <main id="main-progress" style="display: none;">
             <h2>Progreso</h2>
             <article class="art-student">
                 <label>Buscar</label>
-                <input id="searchUser" type="text" placeholder="Ingresa tu busqueda"> <br>
+                <input id="searchUser" type="text" placeholder="Ingresa tu busqueda">
+                <br>
                 <label>Ordenar por</label>
-                <select id="orderBy"> 
+                <select id="orderBy">
                     <option value="">Filtrar por...</option>
                     <option value="name">Nombre</option>
                     <option value="totalComp">Completitud General</option>
@@ -73,7 +82,8 @@
                     <option value="excercises">Ejercicios</option>
                     <option value="quizzes">Quizzes</option>
                     <option value="quizzesAvg">Promedio de Quizzes</option>
-                </select> <br>
+                </select>
+                <br>
                 <label> Ordenar en dirección </label>
                 <select id="orderDirection">
                     <option value="">Ordenar por...</option>
@@ -111,6 +121,8 @@
     </section>
     <script src="js/data.js"></script>
     <script src="js/main2.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <script src="js/graph.js"></script>
 </body>
+
 </html>

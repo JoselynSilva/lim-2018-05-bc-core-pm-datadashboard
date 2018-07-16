@@ -1,12 +1,12 @@
 // -----MENU DESPLEGABLE-----
 let sideMenu = document.getElementById('side-menu'),
     sideMain = document.getElementById('container-principal');
-    
+
 
 let openSlideMenu = () => {
     sideMenu.style.width = '250px';
     // sideMain.style.marginLeft = '250px';
-   
+
 }
 
 let closeSlideMenu = () => {
@@ -49,6 +49,7 @@ let options = {
     orderDirection: '',
     search: ''
 };
+
 /**************************************************Funciones complementarias********************************** */
 
 //---------XHR--------//
@@ -71,7 +72,6 @@ const getData = (str, url, callback) => {
 /***********************************************Asociando eventos**************************************/
 
 menuGeneral.addEventListener('click', e => {
-    e.preventDefault();
     mainCampus.style.display = 'block';
     mainWelcome.style.display = 'none';
     mainStudents.style.display = 'none';
@@ -86,8 +86,6 @@ selectDirection.addEventListener('change', () => {
 
 selectOrderBy.addEventListener('change', () => {
     options.orderBy = selectOrderBy.value;
-    // let usersWithStats = processCohortData(options);
-    // showData(usersWithStats);
 });
 
 searchUser.addEventListener('keyup', () => {
@@ -110,6 +108,7 @@ const showData = (array) => {
             <td> ${students.stats.quizzes.percent} </td>
             <td> ${students.stats.quizzes.scoreAvg} </td>
          </tr>`;
+
     });
     listTableStudent.innerHTML = template;
 
@@ -117,15 +116,11 @@ const showData = (array) => {
         let containerStudent = document.createElement('article');
         let photoStudent = document.createElement('img');
         let nameStudent = document.createElement('h6');
-        let idStudent = document.createElement('p');
         let img = 'img/girl.png';
         photoStudent.setAttribute('src', img);
-        idUser = students.id;
         nameUser = students.name;
-        idStudent.textContent = idUser;
         nameStudent.textContent = nameUser;
         containerStudent.appendChild(photoStudent);
-        containerStudent.appendChild(idStudent);
         containerStudent.appendChild(nameStudent);
         studentContainer.appendChild(containerStudent);
     }
@@ -143,7 +138,7 @@ const showUsers = (str, arr) => {
 }
 
 const showCohorts = (str, arr) => {
-    const allCohorts = arr.filter(element => {
+    const allCohorts = arr.filter(element => {      
         return element.id.startsWith(str);
     });
 
@@ -170,16 +165,14 @@ const showCampus = (str, arr) => {
     });
 
     selectCampus.addEventListener('change', e => {
-        console.log(e.target.value);
         getData(e.target.value, 'https://api.laboratoria.la/cohorts/', showCohorts);
-    })
-
+        selectCohorts.innerHTML= '';
+    });
 }
 
 getData('', 'https://api.laboratoria.la/campuses/', showCampus);
 
 menuStudents.addEventListener('click', () => {
-
     mainStudents.style.display = 'block';
     mainCampus.style.display = 'none';
     mainProgress.style.display = 'none';
@@ -192,3 +185,5 @@ menuProgress.addEventListener('click', () => {
     mainStudents.style.display = 'none';
     mainWelcome.style.display = 'none';
 });
+
+
