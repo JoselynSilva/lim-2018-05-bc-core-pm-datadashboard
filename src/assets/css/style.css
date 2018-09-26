@@ -102,14 +102,21 @@ p {
 
 h2 {
   text-align: left;
-  margin: 10px 15px;
+  margin-left: 90px;
+  margin-top: 15px;
+  margin-bottom: 25px;
   padding: 0px;
   font-size: 28px;
-  
 }
 
 h2 span {
   color: #FF009E;
+}
+
+.subtitle-menu {
+  font-size: 16px;
+  margin-left: 90px;
+  padding-bottom: 15px;
 }
 
 .art-progress {
